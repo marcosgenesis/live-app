@@ -6,7 +6,7 @@
 Já imaginou nesse momento de pandemia, poder saber todas as lives que os seus artistas preferidos irão fazer? Então, essa foi a ideia
 principal deste aplicativo com objetivo apenas de **estudo**.
 ![Home](https://user-images.githubusercontent.com/49327985/90633077-c8324500-e1fb-11ea-85cd-9854be78b89a.png)
-![Home - Live detalhe](https://user-images.githubusercontent.com/49327985/90633103-d41e0700-e1fb-11ea-8c30-ee3a8088566c.png)
+![Home - Live detalhe](https://user-images.githubusercontent.com/49327985/90633264-19dacf80-e1fc-11ea-98cb-4969e3368837.png)
 
 ## Development setup
 
