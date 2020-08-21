@@ -2,7 +2,8 @@ import styled from "styled-components/native";
 
 export const Container = styled.View``;
 export const Logo = styled.Text`
-  font-size: 30px;
+  font-size: 20px;
+  font-family: "LibreBaskerville-Regular";
   align-self: center;
 `;
 export const Search = styled.View`
@@ -21,9 +22,9 @@ export const SearchField = styled.TextInput`
 
 export const DestaqueText = styled.Text`
   font-size: 27px;
-  font-weight: bold;
   margin-top: 10px;
   margin-left: 10px;
+  font-family: "Campton-Bold";
 `;
 
 export const LivesTitle = styled.View`
@@ -35,7 +36,7 @@ export const LivesTitle = styled.View`
 
 export const LivesText = styled.Text`
   font-size: 27px;
-  font-weight: bold;
+  font-family: "Campton-Bold";
   margin-top: 10px;
   margin-left: 10px;
 `;

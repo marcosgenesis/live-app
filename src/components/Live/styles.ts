@@ -19,7 +19,9 @@ export const Content = styled.View`
   padding-left: 10px;
   justify-content: space-around;
 `;
-export const Title = styled.Text``;
+export const Title = styled.Text`
+  font-family: "Campton-Bold";
+`;
 export const Info = styled.View`
   flex-direction: row;
   width: 130px;
@@ -54,7 +56,7 @@ export const ProfileImage = styled.View`
   background: #000;
 `;
 export const Username = styled.Text`
-  font-weight: bold;
+  font-family: "Campton-Bold";
   color: #b7bfd6;
   margin-left: 5px;
 `;
