@@ -2,13 +2,13 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
   background: #fff;
-  width: 95%;
+  width: 98%;
   flex-direction: row;
   border-radius: 10px;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 10px;
 `;
-export const LiveImage = styled.View`
+export const LiveImage = styled.Image`
   width: 118px;
   height: 118px;
   background: #000;
@@ -49,7 +49,7 @@ export const Profile = styled.View`
   flex-direction: row;
   align-items: center;
 `;
-export const ProfileImage = styled.View`
+export const ProfileImage = styled.Image`
   width: 30px;
   height: 30px;
   border-radius: 10px;

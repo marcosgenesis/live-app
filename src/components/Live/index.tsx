@@ -18,11 +18,11 @@ import {
   SeeMore,
 } from "./styles";
 import Icon from "react-native-vector-icons/Feather";
-
+import liveimg from "../../assets/img/liveimg.png";
 const Live: React.FC = () => {
   return (
     <Container>
-      <LiveImage />
+      <LiveImage source={liveimg} />
       <Content>
         <Title>Os maiores sucessos de Aron Paul</Title>
         <Info>
@@ -37,7 +37,7 @@ const Live: React.FC = () => {
         </Info>
         <Bottom>
           <Profile>
-            <ProfileImage></ProfileImage>
+            <ProfileImage source={liveimg}></ProfileImage>
             <Username>aronpaul</Username>
           </Profile>
           <Actions>

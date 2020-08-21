@@ -12,12 +12,13 @@ import {
   Hour,
   BottomText,
 } from "./styles";
-
+import profile from "../../assets/img/perfil.png";
+import mainPicture from "../../assets/img/destaque.png";
 const Highlight: React.FC = () => {
   return (
     <Destaque>
       <Header>
-        <PerfilPicture />
+        <PerfilPicture source={profile} />
         <Info>
           <InfoHour>
             <Icon name="clock" size={16} color="#000" />
@@ -29,7 +30,7 @@ const Highlight: React.FC = () => {
           </InfoDate>
         </Info>
       </Header>
-      <MainPicture></MainPicture>
+      <MainPicture source={mainPicture}></MainPicture>
       <Bottom>
         <BottomText>
           Live Gustavo lima, não perca essa maravilha do show brasileiro

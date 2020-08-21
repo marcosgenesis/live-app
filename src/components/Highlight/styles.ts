@@ -10,7 +10,7 @@ export const Header = styled.View`
   justify-content: space-between;
 `;
 
-export const PerfilPicture = styled.View`
+export const PerfilPicture = styled.Image`
   background: #555;
   width: 55px;
   height: 55px;
@@ -40,7 +40,7 @@ export const Hour = styled.Text`
   font-size: 12px;
   margin-left: 3px;
 `;
-export const MainPicture = styled.View`
+export const MainPicture = styled.Image`
   width: 200px;
   height: 250px;
   background: #fff;
