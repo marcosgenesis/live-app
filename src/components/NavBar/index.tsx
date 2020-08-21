@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
 
-import { Container, MenuItem, CircleIndicator,Title } from "./styles";
+import { Container, MenuItem, SCIcon, Title } from "./styles";
 
 const NavBar: React.FC = ({ state, descriptors, navigation }) => {
   return (
     <Container>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
+
         const label =
           options.tabBarLabel !== undefined
             ? options.tabBarLabel
             : options.title !== undefined
             ? options.title
             : route.name;
-
         const isFocused = state.index === index;
 
         const onPress = () => {
@@ -34,7 +34,6 @@ const NavBar: React.FC = ({ state, descriptors, navigation }) => {
             target: route.key,
           });
         };
-
         return (
           <MenuItem
             key={label}
@@ -45,9 +44,8 @@ const NavBar: React.FC = ({ state, descriptors, navigation }) => {
             onPress={onPress}
             onLongPress={onLongPress}
           >
-            <Title>
-              {label}
-            </Title>
+            <SCIcon name={options.title} isFocused={isFocused} size={20} />
+            <Title isFocused={isFocused}>{route.name}</Title>
           </MenuItem>
         );
       })}

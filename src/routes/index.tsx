@@ -8,9 +8,13 @@ import NavBar from "../components/NavBar";
 const Tab = createBottomTabNavigator();
 const Routes: React.FC = () => {
   return (
-    <Tab.Navigator  tabBar={(props) => <NavBar {...props} />}>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Dashboard" component={Dashboard} />
+    <Tab.Navigator tabBar={(props) => <NavBar {...props} />}>
+      <Tab.Screen name="Home" component={Home} options={{ title: "home" }} />
+      <Tab.Screen
+        name="Blog"
+        component={Dashboard}
+        options={{ title: "file" }}
+      />
     </Tab.Navigator>
   );
 };
